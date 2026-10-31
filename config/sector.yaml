@@ -4,24 +4,50 @@ sector:
   scope: "Crop production only"
 
 search:
-  # WIPO-listed CPC groups, expanded using textual prefixes.
   cpc_prefixes:
-    - "A01B79/005"
+    - A01B79/005
 
-  # Crop-related terms adapted from the WIPO search string.
+  specific_phrases:
+    - precision agriculture
+    - precision farming
+    - site-specific crop management
+    - site-specific agricultural management
+
   agricultural_terms:
-    - "agricultur"
-    - "farming"
-    - "cultiva"
-    - "horticulture"
-    - "crop"
-    - "farmland"
-    - "farm"
+    - agricultur
+    - farming
+    - crop
+    - cultivat
+    - horticultur
 
   technological_terms:
-    - "satellite"
-    - "global positioning system"
-    - "geographic information system"
+    - remote sensing
+    - global positioning
+    - GPS
+    - geographic information
+    - GIS
+    - global navigation satellite
+    - GNSS
+    - variable rate
+    - auto-steer
+    - drone
+    - unmanned aerial vehicle
+    - UAV
+    - robot
+    - autonomous
+    - artificial intelligence
+    - machine learning
+
+  review_exclusion_terms:
+    - livestock
+    - poultry
+    - aquaculture
+    - fish farming
+    - dairy
+    - milking
+    - wind farm
+    - solar farm
+    - cell culture
   
 analysis:
     year_min: 2000
