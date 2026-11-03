@@ -1,0 +1,50 @@
+item,type,role,status,all_families,in_sector,unique,unique_share
+A01B79/005,code,S,selected,2277,2260,1253,8.7
+A01B69/001-004-008,code,S,selected,2236,2175,1123,7.8
+A01D41/1271-72,code,S,selected,374,369,271,1.9
+A01D41/1278,code,S,selected,453,450,178,1.2
+G05D1/43,code,T,selected,1259,220,70,0.5
+G01S19,code,T,selected,48187,852,350,2.4
+B64U,code,T,selected,31082,1839,293,2.0
+G06T2207/10032,code,T,selected,6206,372,28,0.2
+G06T2207/30188,code,T,selected,2711,1295,614,4.3
+G06V20/188,code,T,selected,3063,1466,492,3.4
+G06Q50/02,code,A,selected,19389,2277,762,5.3
+A01B,code,A,selected,39360,4284,93,0.6
+A01C,code,A,selected,62694,1704,304,2.1
+A01D,code,A,selected,42332,1805,298,2.1
+A01G25,code,A,selected,20238,529,141,1.0
+A01M7,code,A,selected,13164,2263,1013,7.0
+A01D2101 lawn-mowers,code,X,selected,2286,0,0,0.0
+precision agriculture,term,K1,selected,351,351,202,1.4
+precision farming,term,K1,selected,59,59,27,0.2
+site-specific crop management,term,K1,selected,0,0,0,0.0
+satellite farming/agriculture,term,K1,to_validate,0,0,0,0.0
+site-specific farming,term,K1,to_validate,7,7,0,0.0
+soil-specific crop management,term,K1,to_validate,0,0,0,0.0
+prescription farming,term,K1,to_validate,0,0,0,0.0
+spatially prescriptive farming,term,K1,to_validate,0,0,0,0.0
+spatially variable field op.,term,K1,to_validate,0,0,0,0.0
+variable rate / VRT,term,K2,selected,1410,192,122,0.8
+yield monitor/map,term,K2,selected,185,103,38,0.3
+soil map,term,K2,selected,53,27,13,0.1
+management zone,term,K2,selected,147,44,12,0.1
+prescription map,term,K2,to_validate,115,98,31,0.2
+section control,term,K2,to_validate,2,1,0,0.0
+guidance system,term,K2,selected,6510,197,71,0.5
+auto-steer,term,K2,selected,1923,258,129,0.9
+controlled traffic/tramlines,term,K2,to_validate,36,13,10,0.1
+GPS,term,K2,selected,70220,1392,813,5.7
+GNSS,term,K2,selected,10120,203,62,0.4
+GIS,term,K2,selected,13802,433,294,2.0
+remote sensing,term,K2,selected,19858,1689,941,6.5
+drone / UAV,term,K2,selected,71194,3958,2077,14.4
+aerial/satellite imagery,term,K2,selected,300,33,5,0.0
+weed mapping,term,K2,to_validate,13,13,5,0.0
+soil sensor,term,K2,selected,254,121,87,0.6
+targeted/spot/precision spray,term,K2,selected,257,55,39,0.3
+agricultur*,term,AG,selected,161674,6049,1607,11.2
+farm*,term,AG,selected,125503,2083,630,4.4
+cultivat*,term,AG,selected,125975,777,249,1.7
+crop(s),term,AG,to_validate,99646,3787,1003,7.0
+lawn,term,X,selected,11923,0,0,0.0

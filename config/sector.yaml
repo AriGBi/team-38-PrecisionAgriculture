@@ -1,55 +1,98 @@
-sector:
-  name: "Precision Agriculture"
+project:
+  sector: "Precision Agriculture"
   client: "John Deere"
-  scope: "Crop production only"
+  scope: "Crop production"
+  reference: "Tey et al. (2024)"
+  reference_doi: "10.1007/s11119-023-10076-y"
 
-search:
-  cpc_prefixes:
-    - A01B79/005
+patstat:
+  environment: "PROD"
+  ipr_type: "PI"
 
-  specific_phrases:
-    - precision agriculture
-    - precision farming
-    - site-specific crop management
-    - site-specific agricultural management
-
-  agricultural_terms:
-    - agricultur
-    - farming
-    - crop
-    - cultivat
-    - horticultur
-
-  technological_terms:
-    - remote sensing
-    - global positioning
-    - GPS
-    - geographic information
-    - GIS
-    - global navigation satellite
-    - GNSS
-    - variable rate
-    - auto-steer
-    - drone
-    - unmanned aerial vehicle
-    - UAV
-    - robot
-    - autonomous
-    - artificial intelligence
-    - machine learning
-
-  review_exclusion_terms:
-    - livestock
-    - poultry
-    - aquaculture
-    - fish farming
-    - dairy
-    - milking
-    - wind farm
-    - solar farm
-    - cell culture
-  
 analysis:
-    year_min: 2000
-    year_max: 2022
-    family_time_column: "earliest_filing_year"
+  year_min: 2000
+  year_max: 2022
+  family_time_column: "earliest_filing_year"
+
+keywords:
+  # Our independent inclusion phrases.
+  specific:
+    - "precision agriculture"
+    - "precision farming"
+    - "site-specific crop management"
+
+  # Agricultural terms from Table 1 of Tey et al.
+  agricultural:
+    - "Agricultur*"
+    - "Farm*"
+    - "Cultivat*"
+
+  # Technological terms from Table 1 of Tey et al.
+  technological:
+    - "Precis*"
+    - "Smart"
+    - "Intelligen*"
+    - "Digit*"
+    - "Modern"
+    - "Remote sens*"
+    - "Global position*"
+    - "GPS"
+    - "Geographic inform*"
+    - "GIS"
+    - "Global navigation satellite"
+    - "GNSS"
+    - "Variable rate*"
+    - "Sensor*"
+    - "Drone*"
+    - "Unmanned aerial vehicle"
+    - "UAV"
+    - "Robot*"
+    - "Auto-steer*"
+    - "Autonomous"
+    - "Automat* control*"  # Adapted from "Automat control*" in the paper
+    - "Monitor*"
+    - "Sampl*"
+    - "Map*"
+    - "Guid*"
+    - "Irrigat*"
+    - "Artificial intel*"
+    - "AI"
+    - "Machine learn*"
+    - "Data analytic*"
+    - "Internet-of-Thing*"
+    - "IoT"
+    - "Model*"
+
+cpc:
+  # Independent inclusion through Route 1.
+  specific:
+    - "A01B79/005"   # Precision agriculture
+    - "A01B69/001"   # Optically assisted agricultural steering
+    - "A01B69/004"   # Automatic guidance of mounted or towed agricultural implements
+    - "A01B69/008"   # Automatic steering of agricultural vehicles
+    - "A01D41/1271"  # Crop flow measurement in combine harvesters
+    - "A01D41/1272"  # Grain flow measurement in combine harvesters
+    - "A01D41/1278"  # Automatic steering of combine harvesters
+
+  # Classification evidence required by Route 3.
+  agricultural_context:
+    - "A01B"     # Soil working and agricultural machinery; also includes forestry
+    - "A01C"     # Planting, sowing and fertilising
+    - "A01D"     # Harvesting and mowing
+    - "A01G25/"  # Watering fields, gardens, sports grounds and similar areas
+    - "A01M7/"   # Liquid-spraying equipment for pest or unwanted vegetation control
+
+ipc:
+  # No independent IPC inclusion codes selected in this version.
+  specific: []
+
+  agricultural_context:
+    - "A01B"     # Soil working and agricultural machinery; also includes forestry
+    - "A01C"     # Planting, sowing and fertilising
+    - "A01D"     # Harvesting and mowing
+    - "A01G25/"  # Watering fields, gardens, sports grounds and similar areas
+    - "A01M7/"   # Liquid-spraying equipment for pest or unwanted vegetation control
+
+validation:
+  sample_size: 100
+  random_seed: 38
