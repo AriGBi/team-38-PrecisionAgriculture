@@ -15,83 +15,142 @@ analysis:
   family_time_column: "earliest_filing_year"
 
 keywords:
-  # Our independent inclusion phrases.
+  # Route 2: Standalone high-precision phrases (exact/stemmed)
+  # Derived from historical terminology validated by Avola et al. (2024)
   specific:
     - "precision agriculture"
-    - "precision farming"
-    - "site-specific crop management"
+    - "precis* farm*"
+    - "high-tech sustainable agriculture"
+    - "site specific farming"
+    - "site specific crop"
+    - "site specific manage*"
+    - "soil-specific crop management"
+    - "spatially prescriptive farming"
+    - "spatially variable field operations"
+    - "variable rate technology"
 
-  # Agricultural terms from Table 1 of Tey et al.
+  # Route 3: Agricultural context terms
+  # Scoped to in-field operations, machinery, and spatial field context (aligned with John Deere scope)
   agricultural:
+    # General domain root stems
     - "Agricultur*"
     - "Farm*"
     - "Cultivat*"
+    - "Crop*"
+    - "Cropland"
+    - "Farmland"
+    - "Harvest*"
+    - "Sowing"
+    - "Fertiliz*"
 
-  # Technological terms from Table 1 of Tey et al.
+    # Field machinery, implements and spreaders
+    - "Tractor*"
+    - "Combine harvester*"
+    - "Harvester*"
+    - "Sprayer*"
+    - "Planter*"
+    - "Seeder*"
+    - "Spreader*"
+    - "Agricultural implement*"
+
+    # In-field physical and spatial features
+    - "In-field"
+    - "Sub-field"
+    - "Canopy"
+    - "Furrow"
+
+  # Route 3: Enabling technological terms
+  # Restricting generic terms (e.g., standalone sensors/controls) to spatial, vision, and rate-control concepts
   technological:
-    - "Precis*"
-    - "Smart"
-    - "Intelligen*"
-    - "Digit*"
-    - "Modern"
-    - "Remote sens*"
-    - "Global position*"
+    # GNSS, positioning, and geo-referencing
+    - "GNSS"
     - "GPS"
+    - "Global position*"
+    - "Global navigation satellite"
     - "Geographic inform*"
     - "GIS"
-    - "Global navigation satellite"
-    - "GNSS"
+    - "RTK"
+    - "Real time kinematic*"
+    - "Centimeter-level"
+
+    # Guidance, auto-steer, and autonomous motion
+    - "Auto-steer*"
+    - "Autonomous vehicle*"
+    - "Autonomous tractor*"
+    - "Autonomous driv*"
+    - "Guidance system*"
+
+    # Variable-rate control, yield mapping, and prescriptive maps
     - "Variable rate*"
-    - "Sensor*"
+    - "Yield map*"
+    - "Soil map*"
+    - "Prescription map*"
+    - "Yield monitor*"
+    - "Soil sampl*"
+
+    # Advanced optical sensing and spectral imaging
+    - "Remote sens*"
+    - "Optical sensor*"
+    - "Lidar" # found in Avola et al. 
+    - "Soil sensor*"
+    - "Multispectral"
+    - "Hyperspectral"
+    - "NDVI"
+    - "Computer vision"
+    - "Canopy sensor*"
+
+    # Field robotics and aerial/ground carriers
     - "Drone*"
     - "Unmanned aerial vehicle"
     - "UAV"
-    - "Robot*"
-    - "Auto-steer*"
-    - "Autonomous"
-    - "Automat* control*"  # Adapted from "Automat control*" in the paper
-    - "Monitor*"
-    - "Sampl*"
-    - "Map*"
-    - "Guid*"
-    - "Irrigat*"
+    - "Agricultural robot*"
+
+    # Analytics and intelligence (standalone 'AI' omitted to prevent clash with active ingredient)
     - "Artificial intel*"
-    - "AI"
     - "Machine learn*"
     - "Data analytic*"
-    - "Internet-of-Thing*"
-    - "IoT"
-    - "Model*"
+    - "Internet of Thing*"
+
+    # Targeted application mechanisms
+    - "Precision irrigat*"
+    - "Spot spray*"
+    - "Individual nozzle*"
 
 cpc:
-  # Independent inclusion through Route 1.
+  # Route 1: Codes inherently dedicated to Precision Agriculture
   specific:
-    - "A01B79/005"   # Precision agriculture
+    - "A01B79/005"   # Data processing methods specifically adapted for precision agriculture
     - "A01B69/001"   # Optically assisted agricultural steering
     - "A01B69/004"   # Automatic guidance of mounted or towed agricultural implements
-    - "A01B69/008"   # Automatic steering of agricultural vehicles
+    - "A01B69/008"   # Automatic steering / autonomous navigation of agricultural vehicles
     - "A01D41/1271"  # Crop flow measurement in combine harvesters
     - "A01D41/1272"  # Grain flow measurement in combine harvesters
-    - "A01D41/1278"  # Automatic steering of combine harvesters
+    - "A01D41/1278"  # Automatic steering and path tracking of combine harvesters
+    #- "A01C21/005"   # Variable-rate fertilization methods (VRT)
+    #- "A01C7/102"    # Calibrating and precision dispensing for seeders
+    #- "A01M7/0089"   # Sprayers with individual nozzle control / targeted weed detection
 
-  # Classification evidence required by Route 3.
+  # Route 3: Context classification codes
   agricultural_context:
-    - "A01B"     # Soil working and agricultural machinery; also includes forestry
-    - "A01C"     # Planting, sowing and fertilising
-    - "A01D"     # Harvesting and mowing
-    - "A01G25/"  # Watering fields, gardens, sports grounds and similar areas
-    - "A01M7/"   # Liquid-spraying equipment for pest or unwanted vegetation control
+    - "A01B"         # Soil working, implements, and tractors
+    - "A01C"         # Planting, sowing, and fertilizing
+    - "A01D"         # Harvesting and combine thrashers
+    - "A01G25/"      # Open-field irrigation systems
+    - "A01M7/"       # Crop spraying and pest control
+
+  # Negative filters (exclusions explicitly supported by literature)
+  exclude:
+    - "A01K"         # Livestock farming, animal husbandry, and milking machines
+    - "C12N"         # Genetic engineering, molecular biology, and GMO breeding
 
 ipc:
-  # No independent IPC inclusion codes selected in this version.
   specific: []
-
   agricultural_context:
-    - "A01B"     # Soil working and agricultural machinery; also includes forestry
-    - "A01C"     # Planting, sowing and fertilising
-    - "A01D"     # Harvesting and mowing
-    - "A01G25/"  # Watering fields, gardens, sports grounds and similar areas
-    - "A01M7/"   # Liquid-spraying equipment for pest or unwanted vegetation control
+    - "A01B"
+    - "A01C"
+    - "A01D"
+    - "A01G25/"
+    - "A01M7/"
 
 validation:
   sample_size: 100
