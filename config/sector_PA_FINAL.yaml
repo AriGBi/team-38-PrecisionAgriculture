@@ -1,0 +1,196 @@
+# Precision Agriculture — unified technology route (based on sector_PA_v9.yaml)
+# R1 = specific CPC/IPC; R2 = explicit PA phrases (NO direct precision seeding).
+# R3 = (agricultural CPC OR agricultural IPC) AND enabling_technologies AND pa_functions.
+# No extra agricultural TEXT keyword required in R3.
+# R1/R2 remain direct inclusion; existing classification exclusions apply only to R3.
+# Topical exclusions are title-based and apply to all routes EXCEPT protected A01B79/005.
+# Every keyword flag is aggregated at DOCDB patent-family level.
+# Scientific context: Tey et al. (2024) DOI 10.1007/s11119-023-10076-y;
+# Avola et al. (2024) DOI 10.1016/j.wpi.2024.102262;
+# Rejeb et al. (2024) DOI 10.1016/j.atech.2024.100684.
+# Keyword variants are researcher-derived operational search terms, not verbatim paper queries.
+project:
+  sector: Precision Agriculture
+  client: John Deere
+  scope: Crop production
+  reference: Tey et al. (2024); Avola et al. (2024); Rejeb et al. (2024)
+  reference_doi: 10.1007/s11119-023-10076-y
+patstat:
+  environment: PROD
+  ipr_type: PI
+analysis:
+  year_min: 2000
+  year_max: 2022
+  family_time_column: earliest_filing_year
+
+keywords:
+  specific:
+  - precision agriculture
+  - precision farming
+  - site specific crop management
+  - site specific farming
+  - site specific agriculture
+  - variable rate technology
+  - precision irrigation
+  
+  agricultural:
+  - agricultur*
+  - farm*
+  - crop*
+  - tractor*
+  - harvest*
+  - seed*
+  - soil*
+ 
+  enabling_technologies:
+  - site specific management
+  - site specific application
+  - variable rate application
+  - variable rate technology
+  - variable rate seeding
+  - variable rate fertiliz*
+  - variable rate spraying
+  - yield map*
+  - yield monitor*
+  - prescription map*
+  - management zone*
+  - spatial variabilit*
+  - auto steer*
+  - automatic steer*
+  - precision irrigat*
+  - site specific weed management
+  - ISOBUS
+  - ISO 11783
+  - GPS
+  - GNSS
+  - RTK
+  - geographic information system*
+  - remote sens*
+  - drone*
+  - unmanned aerial vehicle*
+  - UAV
+  - robot*
+  - autonomous vehicle*
+  - sensor*
+  - multispectral
+  - hyperspectral
+  - lidar
+  - machine learn*
+  - deep learn*
+  - artificial intelligence
+  - computer vision
+  - machine vision
+  - image process*
+  - image segment*
+  - internet of things
+  - wireless sensor network*
+  - data analy*
+  - decision support system*
+  - control system*
+  - automatic control
+  - electro hydraulic control
+  - actuator*
+  - data acquisition
+  - data exchange
+  - communication system*
+  - CAN bus
+  
+  pa_functions:
+  - crop monitor*
+  - crop health
+  - crop stress
+  - weed detect*
+  - plant disease detect*
+  - soil moisture
+  - soil propert*
+  - soil nutrient*
+  - yield map*
+  - yield monitor*
+  - yield estimat*
+  - yield predict*
+  - crop row*
+  - seed placement
+  - precision seed*
+  - precision irrigat*
+  - selective spray*
+  - targeted spray*
+  #- tractor implement*
+  #- agricultural implement*
+  - crop harvest*
+  - plant health
+  - weed recognit*
+  - crop row detect*
+  - fruit detect*
+  - fruit recognit*
+  - vegetation index
+  - NDVI
+  - leaf area index
+  - canopy temperatur*
+  - soil electrical conductivit*
+  - spatial variabilit*
+  - management zone*
+  - prescription map*
+  - variable rate application
+  - variable rate seeding
+  - variable rate fertiliz*
+  - spot spray*
+  - irrigation schedul*
+  - seeding depth control
+  - seed metering
+  - section control
+  - implement control
+  - implement communication
+  - tractor implement communication
+  - auto steer*
+  - automatic steer*
+  - agricultural navigation
+  
+  exclusion_terms:
+  - forest*
+  - logging
+  - timber
+  - lumber
+  - tree felling
+  - golf
+  - turf*
+  - lawn*
+  - landscap*
+  - livestock
+  - cattle
+  - bovine
+  - dairy
+  - poultry
+  - swine
+  - pig farm*
+  - animal husbandry
+  - animal feed*
+  - ornamental
+  - garden*
+  - houseplant*
+  - flower*
+
+cpc:
+  specific:
+  - A01B79/005
+  - A01B69/008
+  agricultural_context:
+  - A01B
+  - A01C
+  - A01D
+  - A01G25/
+  - A01M7/
+  exclude:
+  - A01K
+  - C12N
+ipc:
+  specific: []
+  agricultural_context:
+  - A01B
+  - A01C
+  - A01D
+  - A01G25/
+  - A01M7/
+  exclude: []
+validation:
+  sample_size: 100
+  random_seed: 38
