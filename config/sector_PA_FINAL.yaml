@@ -1,14 +1,12 @@
-# Precision Agriculture — unified technology route (based on sector_PA_v9.yaml)
-# R1 = specific CPC/IPC; R2 = explicit PA phrases (NO direct precision seeding).
+# Precision Agriculture — unified technology route 
+# R1 = specific CPC/IPC; 
+# R2 = explicit PA phrases (NO direct precision seeding).
 # R3 = (agricultural CPC OR agricultural IPC) AND enabling_technologies AND pa_functions.
-# No extra agricultural TEXT keyword required in R3.
-# R1/R2 remain direct inclusion; existing classification exclusions apply only to R3.
-# Topical exclusions are title-based and apply to all routes EXCEPT protected A01B79/005.
-# Every keyword flag is aggregated at DOCDB patent-family level.
-# Scientific context: Tey et al. (2024) DOI 10.1007/s11119-023-10076-y;
-# Avola et al. (2024) DOI 10.1016/j.wpi.2024.102262;
-# Rejeb et al. (2024) DOI 10.1016/j.atech.2024.100684.
-# Keyword variants are researcher-derived operational search terms, not verbatim paper queries.
+
+# Scientific context: Tey et al. (2024) 
+# Avola et al. (2024) 
+# Rejeb et al. (2024)
+
 project:
   sector: Precision Agriculture
   client: John Deere
@@ -114,8 +112,6 @@ keywords:
   - precision irrigat*
   - selective spray*
   - targeted spray*
-  #- tractor implement*
-  #- agricultural implement*
   - crop harvest*
   - plant health
   - weed recognit*
@@ -168,6 +164,7 @@ keywords:
   - garden*
   - houseplant*
   - flower*
+  - rainwater
 
 cpc:
   specific:
