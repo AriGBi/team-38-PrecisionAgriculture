@@ -6,6 +6,8 @@ Usage
     from pa_patents import gather_patents
 
     sel = gather_patents()                      # nothing is downloaded yet
+    sel = gather_patents(year_max=2024)         # override the config's year_max
+    sel = gather_patents(year_min=2000, year_max=2024)   # override both
     families = sel.families_df()                # family-level flags + routes -> pandas
     counts   = sel.route_counts_df()            # route-combination summary -> pandas
 
@@ -166,13 +168,18 @@ def _locate_config(config_path: Optional[Union[str, Path]]) -> Path:
     return path
 
 
-def _load_params(config: dict) -> dict:
+def _load_params(
+    config: dict,
+    year_min: Optional[int] = None,
+    year_max: Optional[int] = None,
+) -> dict:
+    """Resolve parameters; `year_min` / `year_max` (if given) override the YAML."""
     kw, cpc, ipc = config["keywords"], config["cpc"], config["ipc"]
     params = {
         "env": config["patstat"]["environment"],
         "ipr_type": config["patstat"]["ipr_type"],
-        "year_min": int(config["analysis"]["year_min"]),
-        "year_max": int(config["analysis"]["year_max"]),
+        "year_min": int(year_min if year_min is not None else config["analysis"]["year_min"]),
+        "year_max": int(year_max if year_max is not None else config["analysis"]["year_max"]),
         "family_time_column": config["analysis"]["family_time_column"],
         "specific_phrases": kw["specific"],
         "agricultural_terms": kw["agricultural"],
@@ -199,6 +206,8 @@ def _load_params(config: dict) -> dict:
 def gather_patents(
     config_path: Optional[Union[str, Path]] = None,
     *,
+    year_min: Optional[int] = None,
+    year_max: Optional[int] = None,
     patstat: Optional[PatstatClient] = None,
     verbose: bool = True,
 ) -> PatentSelection:
@@ -209,6 +218,10 @@ def gather_patents(
     ----------
     config_path : path to the YAML config. If None, looks for
                   ``config/sector_PA_FINAL.yaml`` from the cwd or its parent.
+    year_min    : optional first family year (earliest filing year); overrides
+                  ``analysis.year_min`` in the config. None = use the config.
+    year_max    : optional last family year; overrides ``analysis.year_max`` in
+                  the config. None = use the config.
     patstat     : an existing PatstatClient to reuse (otherwise one is created
                   using the environment from the config).
     verbose     : print a short summary.
@@ -223,7 +236,7 @@ def gather_patents(
     config_file = _locate_config(config_path)
     with config_file.open("r", encoding="utf-8") as f:
         config = yaml.safe_load(f)
-    p = _load_params(config)
+    p = _load_params(config, year_min=year_min, year_max=year_max)
 
     # Keyword regexes
     specific_patterns = _patterns(p["specific_phrases"])
