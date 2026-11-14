@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terrorizer"
+version = "0.1.0"
+description = "Organizations' names disambiguation (entity linking) using NLP and network theory"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "GNU General Public License" }
+authors = [{ name = "Grazia Sveva Ascione" }]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "networkx",
+    "numba",
+    "optuna",
+    "joblib",
+    "atpbar",
+    "mantichora",
+    "pandarallel",
+    "sentence-transformers",
+    "polyfuzz",
+    "cleanco",
+    "toolz",
+    "nltk",
+    "gensim",
+    "tldextract",
+    "swifter",
+    "tqdm",
+]
+
+[tool.setuptools]
+packages = ["terrorizer"]
