@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="100%" role="img" aria-label="Importance of IP protection by industry">
+  <rect width="960" height="440" fill="#ffffff" rx="6" />
+  <g font-family="system-ui, -apple-system, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif">
+    <text x="24" y="34" font-size="18" font-weight="700" fill="#263238">Importance of IP protection by industry</text>
+    <text x="24" y="54" font-size="13" fill="#667085">Share of US firms rating each form of protection very, somewhat or not important</text>
+
+    <!-- LEFT PANEL: PATENTS -->
+    <text x="289" y="92" font-size="19" fill="#2F5C8F" text-anchor="middle">Patents</text>
+    <g font-size="13" fill="#263238" text-anchor="end">
+      <text x="116" y="128" dy="0.35em">Life Science</text>
+      <text x="116" y="168" dy="0.35em">IT</text>
+      <text x="116" y="208" dy="0.35em">Manufacturing</text>
+      <text x="116" y="248" dy="0.35em">Retail</text>
+      <text x="116" y="288" dy="0.35em">Others</text>
+    </g>
+    <g stroke="#E8EDF2" stroke-width="1">
+      <line x1="190" y1="108" x2="190" y2="308" />
+      <line x1="256" y1="108" x2="256" y2="308" />
+      <line x1="322" y1="108" x2="322" y2="308" />
+      <line x1="388" y1="108" x2="388" y2="308" />
+      <line x1="454" y1="108" x2="454" y2="308" />
+    </g>
+    <!-- Patents Bars -->
+    <g>
+      <rect x="124" y="113" width="198" height="30" fill="#1F4571"><title>Life Science: very important 60.0%</title></rect>
+      <rect x="322" y="113" width="33" height="30" fill="#EDE53C"><title>Life Science: somewhat important 10.0%</title></rect>
+      <rect x="355" y="113" width="99" height="30" fill="#D9600F"><title>Life Science: not important 30.0%</title></rect>
+
+      <rect x="124" y="153" width="95.7" height="30" fill="#1F4571"><title>IT: very important 29.0%</title></rect>
+      <rect x="219.7" y="153" width="49.17" height="30" fill="#EDE53C"><title>IT: somewhat important 14.9%</title></rect>
+      <rect x="268.87" y="153" width="185.13" height="30" fill="#D9600F"><title>IT: not important 56.1%</title></rect>
+
+      <rect x="124" y="193" width="75.9" height="30" fill="#1F4571"><title>Manufacturing: very important 23.0%</title></rect>
+      <rect x="199.9" y="193" width="42.9" height="30" fill="#EDE53C"><title>Manufacturing: somewhat important 13.0%</title></rect>
+      <rect x="242.8" y="193" width="211.2" height="30" fill="#D9600F"><title>Manufacturing: not important 64.0%</title></rect>
+
+      <rect x="124" y="233" width="69.3" height="30" fill="#1F4571"><title>Retail: very important 21.0%</title></rect>
+      <rect x="193.3" y="233" width="29.7" height="30" fill="#EDE53C"><title>Retail: somewhat important 9.0%</title></rect>
+      <rect x="223" y="233" width="231" height="30" fill="#D9600F"><title>Retail: not important 70.0%</title></rect>
+
+      <rect x="124" y="273" width="23.1" height="30" fill="#1F4571"><title>Others: very important 7.0%</title></rect>
+      <rect x="147.1" y="273" width="13.2" height="30" fill="#EDE53C"><title>Others: somewhat important 4.0%</title></rect>
+      <rect x="160.3" y="273" width="293.7" height="30" fill="#D9600F"><title>Others: not important 89.0%</title></rect>
+    </g>
+    <!-- Patents Bar Labels -->
+    <g font-size="11" font-weight="600" text-anchor="middle">
+      <text x="223" y="128" dy="0.35em" fill="#ffffff">60%</text>
+      <text x="338.5" y="128" dy="0.35em" fill="#263238">10%</text>
+      <text x="404.5" y="128" dy="0.35em" fill="#ffffff">30%</text>
+
+      <text x="171.85" y="168" dy="0.35em" fill="#ffffff">29%</text>
+      <text x="244.29" y="168" dy="0.35em" fill="#263238">15%</text>
+      <text x="361.44" y="168" dy="0.35em" fill="#ffffff">56%</text>
+
+      <text x="161.95" y="208" dy="0.35em" fill="#ffffff">23%</text>
+      <text x="221.35" y="208" dy="0.35em" fill="#263238">13%</text>
+      <text x="348.4" y="208" dy="0.35em" fill="#ffffff">64%</text>
+
+      <text x="158.65" y="248" dy="0.35em" fill="#ffffff">21%</text>
+      <text x="208.15" y="248" dy="0.35em" fill="#263238">9%</text>
+      <text x="338.5" y="248" dy="0.35em" fill="#ffffff">70%</text>
+
+      <text x="135.55" y="288" dy="0.35em" fill="#ffffff">7%</text>
+      <text x="307.15" y="288" dy="0.35em" fill="#ffffff">89%</text>
+    </g>
+    <!-- Patents Axes -->
+    <g stroke="#263238" stroke-width="1">
+      <line x1="124" y1="108" x2="124" y2="308" />
+      <line x1="124" y1="308" x2="454" y2="308" />
+    </g>
+    <g font-size="12" fill="#667085" text-anchor="middle">
+      <text x="124" y="324">0</text>
+      <text x="190" y="324">.2</text>
+      <text x="256" y="324">.4</text>
+      <text x="322" y="324">.6</text>
+      <text x="388" y="324">.8</text>
+      <text x="454" y="324">1</text>
+    </g>
+    <text x="289" y="344" font-size="12.5" fill="#263238" text-anchor="middle">Proportion</text>
+
+    <!-- RIGHT PANEL: TRADE SECRETS -->
+    <text x="761" y="92" font-size="19" fill="#2F5C8F" text-anchor="middle">Trade Secrets</text>
+    <g font-size="13" fill="#263238" text-anchor="end">
+      <text x="588" y="128" dy="0.35em">Life Science</text>
+      <text x="588" y="168" dy="0.35em">IT</text>
+      <text x="588" y="208" dy="0.35em">Manufacturing</text>
+      <text x="588" y="248" dy="0.35em">Retail</text>
+      <text x="588" y="288" dy="0.35em">Others</text>
+    </g>
+    <g stroke="#E8EDF2" stroke-width="1">
+      <line x1="662" y1="108" x2="662" y2="308" />
+      <line x1="728" y1="108" x2="728" y2="308" />
+      <line x1="794" y1="108" x2="794" y2="308" />
+      <line x1="860" y1="108" x2="860" y2="308" />
+      <line x1="926" y1="108" x2="926" y2="308" />
+    </g>
+    <!-- Trade Secrets Bars -->
+    <g>
+      <rect x="596" y="113" width="194.7" height="30" fill="#1F4571"><title>Life Science: very important 59.0%</title></rect>
+      <rect x="790.7" y="113" width="57.42" height="30" fill="#EDE53C"><title>Life Science: somewhat important 17.4%</title></rect>
+      <rect x="848.12" y="113" width="77.88" height="30" fill="#D9600F"><title>Life Science: not important 23.6%</title></rect>
+
+      <rect x="596" y="153" width="155.1" height="30" fill="#1F4571"><title>IT: very important 47.0%</title></rect>
+      <rect x="751.1" y="153" width="64.35" height="30" fill="#EDE53C"><title>IT: somewhat important 19.5%</title></rect>
+      <rect x="815.45" y="153" width="110.55" height="30" fill="#D9600F"><title>IT: not important 33.5%</title></rect>
+
+      <rect x="596" y="193" width="125.4" height="30" fill="#1F4571"><title>Manufacturing: very important 38.0%</title></rect>
+      <rect x="721.4" y="193" width="66.99" height="30" fill="#EDE53C"><title>Manufacturing: somewhat important 20.3%</title></rect>
+      <rect x="788.39" y="193" width="137.61" height="30" fill="#D9600F"><title>Manufacturing: not important 41.7%</title></rect>
+
+      <rect x="596" y="233" width="95.7" height="30" fill="#1F4571"><title>Retail: very important 29.0%</title></rect>
+      <rect x="691.7" y="233" width="52.14" height="30" fill="#EDE53C"><title>Retail: somewhat important 15.8%</title></rect>
+      <rect x="743.84" y="233" width="182.16" height="30" fill="#D9600F"><title>Retail: not important 55.2%</title></rect>
+
+      <rect x="596" y="273" width="46.2" height="30" fill="#1F4571"><title>Others: very important 14.0%</title></rect>
+      <rect x="642.2" y="273" width="35.31" height="30" fill="#EDE53C"><title>Others: somewhat important 10.7%</title></rect>
+      <rect x="677.51" y="273" width="248.49" height="30" fill="#D9600F"><title>Others: not important 75.3%</title></rect>
+    </g>
+    <!-- Trade Secrets Bar Labels -->
+    <g font-size="11" font-weight="600" text-anchor="middle">
+      <text x="693.35" y="128" dy="0.35em" fill="#ffffff">59%</text>
+      <text x="819.41" y="128" dy="0.35em" fill="#263238">17%</text>
+      <text x="887.06" y="128" dy="0.35em" fill="#ffffff">24%</text>
+
+      <text x="673.55" y="168" dy="0.35em" fill="#ffffff">47%</text>
+      <text x="783.28" y="168" dy="0.35em" fill="#263238">20%</text>
+      <text x="870.73" y="168" dy="0.35em" fill="#ffffff">34%</text>
+
+      <text x="658.7" y="208" dy="0.35em" fill="#ffffff">38%</text>
+      <text x="754.9" y="208" dy="0.35em" fill="#263238">20%</text>
+      <text x="857.2" y="208" dy="0.35em" fill="#ffffff">42%</text>
+
+      <text x="643.85" y="248" dy="0.35em" fill="#ffffff">29%</text>
+      <text x="717.77" y="248" dy="0.35em" fill="#263238">16%</text>
+      <text x="834.92" y="248" dy="0.35em" fill="#ffffff">55%</text>
+
+      <text x="619.1" y="288" dy="0.35em" fill="#ffffff">14%</text>
+      <text x="659.86" y="288" dy="0.35em" fill="#263238">11%</text>
+      <text x="801.76" y="288" dy="0.35em" fill="#ffffff">75%</text>
+    </g>
+    <!-- Trade Secrets Axes -->
+    <g stroke="#263238" stroke-width="1">
+      <line x1="596" y1="108" x2="596" y2="308" />
+      <line x1="596" y1="308" x2="926" y2="308" />
+    </g>
+    <g font-size="12" fill="#667085" text-anchor="middle">
+      <text x="596" y="324">0</text>
+      <text x="662" y="324">.2</text>
+      <text x="728" y="324">.4</text>
+      <text x="794" y="324">.6</text>
+      <text x="860" y="324">.8</text>
+      <text x="926" y="324">1</text>
+    </g>
+    <text x="761" y="344" font-size="12.5" fill="#263238" text-anchor="middle">Proportion</text>
+
+    <!-- LEGEND -->
+    <rect x="235" y="364" width="490" height="34" fill="none" stroke="#263238" stroke-width="1" />
+    <g font-size="13" fill="#263238">
+      <rect x="253" y="375" width="34" height="12" fill="#D9600F" />
+      <text x="294" y="381" dy="0.35em">Not Important</text>
+      <rect x="394" y="375" width="34" height="12" fill="#EDE53C" />
+      <text x="435" y="381" dy="0.35em">Somewhat Important</text>
+      <rect x="578" y="375" width="34" height="12" fill="#1F4571" />
+      <text x="619" y="381" dy="0.35em">Very Important</text>
+    </g>
+
+    <!-- FOOTNOTE -->
+    <text x="480" y="422" font-size="11" fill="#667085" text-anchor="middle">Source: Mezzanotti &amp; Simcoe (2022), CES-WP-22-09, Section 3.3 and Figure 5. &#8220;Very or somewhat&#8221; totals are from the text; &#8220;very important&#8221; shares are read from the figure (&#177;1 pp).</text>
+  </g>
+</svg>
