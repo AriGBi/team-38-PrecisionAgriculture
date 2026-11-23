@@ -1,5 +1,5 @@
 
-# Step 2 Applicant Harmonisation and Validation - Methodological Decisions and Rationale*
+# Step 2 Applicant Harmonisation and Validation - Methodological Decisions and Rationale
 
 ## 1. Objective
 
