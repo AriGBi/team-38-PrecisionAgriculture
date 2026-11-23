@@ -1,8 +1,5 @@
 
-# Step 0 — Precision Agriculture Patent Retrieval
-## Methodological Decisions and Rationale
-
----
+# Step 0 Precision Agriculture Patent Retrieval - Methodological Decisions and Rationale
 
 ## 1. Objective and Sector Definition
 
@@ -33,7 +30,6 @@ The sector definition was informed by three scientific references:
 - Lawn, turf, and golf maintenance.
 - Ornamental gardening and other unrelated applications.
 
----
 
 ## 2. Query Construction
 
@@ -124,7 +120,6 @@ Requiring the simultaneous presence of:
 
 creates a stronger indication that the invention concerns a precision-agriculture application.
 
----
 
 ## 3. Alternative Strategies and Noise Reduction
 
@@ -151,7 +146,6 @@ The explanations below describe the reasons for preferring the final architectur
 
 **Expected effect:** Avoid allowing ambiguous phrases to retrieve patents without contextual evidence.
 
----
 
 ## 4. Exclusion Strategy
 
@@ -189,7 +183,6 @@ Families whose representative application contains `A01B79/005` are protected fr
 
 **Important distinction:** The protection applies to topical exclusions, not to the definition of the complete study population or the application-selection procedure.
 
----
 
 ## 5. Unit of Analysis and Representative Application
 
@@ -221,7 +214,6 @@ Applications are ranked by:
 Families without an eligible English abstract are excluded from retrieval.
 
 
----
 
 ## 6. Keyword and Classification Matching
 
@@ -238,7 +230,6 @@ Terms within the same keyword group are combined into one regular expression.
 - Reduce the number of separate search conditions.
 
 
----
 
 ## 7. Retrieval Results
 
@@ -277,7 +268,6 @@ R2 contributes 305 exclusive families, indicating that explicit terminology prov
 The routes are complementary rather than mutually exclusive.
 
 
----
 
 ## 8. Validation Strategy
 
@@ -353,7 +343,6 @@ The execution confirms:
 - Unique family identifiers.
 - Route indicators attached to all sampled records.
 
----
 
 ## 9. Evaluation Metrics
 
