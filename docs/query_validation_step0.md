@@ -54,11 +54,10 @@ Specific CPC codes:
 - `A01B79/005` --> Precision Agriculture
 - `A01B69/008` --> Automatic steering or guiding of agricultural vehicles
 
-No specific IPC codes are configured in the final YAML.
-
 **Rationale:**
-- Patent classifications provide structured technological information.
-- Highly specific classifications can identify relevant innovations even when the title or abstract does not explicitly use Precision Agriculture terminology.
+
+The first code directly identifies Precision Agriculture and therefore represents a strong indicator of technological relevance.
+The second code was included to capture agricultural automatic guidance technologies, which represent one of the core technological pillars of Precision Agriculture.
 
 
 ### R2 — Explicit Precision Agriculture terminology
@@ -330,21 +329,16 @@ Generic agricultural machinery improvements or inventions unrelated to the defin
 
 ### 8.4 Binary relevance definition
 
-The three categories are converted into binary labels:
+The three categories were used to support the final binary relevance assessment:
 
 | Category | Binary label |
 |---|---|
 | A — Core PA | 1 |
-| B — Supporting PA | 1 |
+| B — Supporting PA | Case-by-case assessment |
 | C — Out of scope | 0 |
 
-**Rationale:**
+**Rationale:** While patents classified as A were considered directly relevant to Precision Agriculture, those falling into category B required a more careful assessment. For these patents, relevance was not assumed solely because they involved technologies potentially applicable to agriculture. Instead, each patent had to be evaluated individually to determine whether the invention had a sufficiently direct and identifiable connection to Precision Agriculture operations.
 
-The project aims to capture both direct PA innovations and technologies specifically supporting PA operations.
-
-Restricting relevance to category A would produce a narrower technological definition and could exclude important enabling innovations.
-
-**Critical distinction:** Generic enabling technologies are not automatically relevant. Category B requires a direct and identifiable connection with PA functions.
 
 
 ### 8.5 Validation output
@@ -361,25 +355,30 @@ The execution confirms:
 
 ---
 
-## 9. Evaluation Metric
-
-Once manual labels are completed, the following analyses can be performed.
+## 9. Evaluation Metrics
 
 ### 9.1 Estimated precision
 
-Estimated precision within the retrieved population:
-
+Precision was estimated as:
 `Precision = Relevant sampled families / Total sampled families`
 
-Here, a family is considered relevant if it receives category A or B.
+The validation produced the following results:
 
-This estimates the proportion of retrieved patent families that satisfy the study's sector definition.
+| Classification | Number of families |
+|---|---:|
+| Relevant | 84 |
+| Out of scope | 16 |
+| **Total** | **100** |
+
+
+`Precision = 84 / 100 = 84%`
+
+The resulting **estimated precision is 84%**, indicating that the retrieval strategy successfully identified relevant Precision Agriculture patents in the majority of sampled cases.
+
+The remaining 16% were classified as false positives, primarily reflecting the difficulty of distinguishing Precision Agriculture innovations from generic agricultural technologies.
 
 
 
 
 
-
-
-are intended to provide a transparent and reproducible basis for the patent landscape analysis and its technical appendix.
 
